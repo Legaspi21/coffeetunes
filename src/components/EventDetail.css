@@ -1,0 +1,23 @@
+.event-detail__card {
+	width: 50%;
+	height: 350px;
+	box-shadow: 7px 10px 10px 3px #888888;
+}
+.event-detail__image {
+	height: 80%;
+	width: 95%;
+	margin: 5px 5px;
+	border: 1px solid #000;
+}
+.event-detail__detail {
+	border: 1px solid #000;
+	width: 95%;
+	height: 10%;
+	margin: 5px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.event-detail__description {
+	
+}

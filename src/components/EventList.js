@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import EventDetail from './EventDetail';
 import './EventList.css';
 
 class EventList extends Component {
 	render() {
 		return(
-			<div>
-				<p>EVENTS GO HERE</p>
+			<div className="event-list__container">
+				<EventDetail />
 			</div>
 		);
 	}
