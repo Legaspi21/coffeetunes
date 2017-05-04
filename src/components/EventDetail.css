@@ -13,13 +13,27 @@
 	border: 1px solid #000;
 }
 .event-detail__detail {
-	border: 1px solid #000;
+	background-color: #f8f8f8;
+	border: 1px solid #f0f0f0;
 	width: 95%;
 	height: 10%;
 	margin: 5px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.event-detail__detail:hover {
+	background-color: #f0f0f0;
+	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+}
+.event-detail__detail:active {
+	border: none;
+	background-color: #e8e8e8;
+	-webkit-box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.46);
+	-moz-box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.46);
+	box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.46);
 }
 .event-detail__description {
 	
