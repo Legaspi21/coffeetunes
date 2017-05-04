@@ -7,6 +7,7 @@ class EventList extends Component {
 		return(
 			<div className="event-list__container">
 				<EventDetail />
+				<EventDetail />
 			</div>
 		);
 	}

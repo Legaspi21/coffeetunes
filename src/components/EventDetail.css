@@ -1,7 +1,10 @@
 .event-detail__card {
-	width: 50%;
+	width: 40%;
 	height: 350px;
-	box-shadow: 7px 10px 10px 3px #888888;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 }
 .event-detail__image {
 	height: 80%;
@@ -13,7 +16,7 @@
 	border: 1px solid #000;
 	width: 95%;
 	height: 10%;
-	margin: 5px 5px;
+	margin: 5px auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
