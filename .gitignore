@@ -9,6 +9,9 @@
 # production
 /build
 
+# token
+/src/Key.js
+
 # misc
 .DS_Store
 .env

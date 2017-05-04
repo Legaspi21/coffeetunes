@@ -5,9 +5,9 @@ class EventDetail extends Component {
 	render() {
 		return(
 			<div className="event-detail__card">
-				<img className="event-detail__image" src="http://static.stereogum.com/uploads/2015/01/Blink-182.png" alt=""/>
+				<img className="event-detail__image" src={this.props.image} alt=""/>
 				<div className="event-detail__detail">
-					<p className="event-detail__description">Blink-182</p>	
+					<p className="event-detail__description">{this.props.name}</p>	
 				</div>
 			</div>
 		);
