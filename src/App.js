@@ -8,15 +8,17 @@ import './App.css';
 class App extends Component {
   state = {
     events: [],
+    city: 'New York'
   }
   componentWillMount() {
     //TODO: Fetch Events from API
     const self = this;
+    const {city} = this.state;
     axios.get('https://www.eventbriteapi.com/v3/events/search/', {
       params: {
         token: TOKEN,
         categories: '103',
-        'location.address': 'San Francisco',
+        'location.address': city,
         'location.within': '25mi'
       }
     })
@@ -34,7 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header title="Coffee Tunes" subtitle="Discover Artists - Meet for Coffee"/>
-        <EventList events={events} />
+        {events.length > 1 ? <EventList events={events} /> : null}
       </div>
     );
   }

@@ -5,8 +5,8 @@ class Header extends Component {
 	render() {
 		let {title, subtitle} = this.props;
 		return(
-			<div>
-				<h1>{title}</h1>
+			<div className="header__container">
+				<h1 className="header__title">{title}</h1>
 				<p>{subtitle}</p>
 			</div>
 		);
