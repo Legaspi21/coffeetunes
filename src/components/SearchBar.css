@@ -1,0 +1,22 @@
+.search-bar {
+	margin-top: 10px;
+	border: 1px solid #000;
+	border-radius: 25px;
+	width: 50%;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.search-bar__icon {
+	font-size: 1rem;
+}
+.search-bar__input {
+	font-size: 1rem;
+	width: 80%;
+	text-align: center;
+}
+@media only screen 
+and (min-width : 1224px) {
+ .search-bar {width: 30%;}
+}
