@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdeead+0,f6ea9e+0,f7e09b+10,f3ec87+26,ffbfa1+42,b5ffbc+73,b5f6ff+89,f9f4db+94,fffdf2+100 */
+  background: #fdeead; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #fdeead 0%, #f6ea9e 0%, #f7e09b 10%, #f3ec87 26%, #ffbfa1 42%, #b5ffbc 73%, #b5f6ff 89%, #f9f4db 94%, #fffdf2 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #fdeead 0%,#f6ea9e 0%,#f7e09b 10%,#f3ec87 26%,#ffbfa1 42%,#b5ffbc 73%,#b5f6ff 89%,#f9f4db 94%,#fffdf2 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #fdeead 0%,#f6ea9e 0%,#f7e09b 10%,#f3ec87 26%,#ffbfa1 42%,#b5ffbc 73%,#b5f6ff 89%,#f9f4db 94%,#fffdf2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdeead', endColorstr='#fffdf2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .App-logo {
@@ -17,7 +23,6 @@
 .App-intro {
   font-size: large;
 }
-
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
