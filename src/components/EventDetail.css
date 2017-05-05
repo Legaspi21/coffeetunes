@@ -1,15 +1,19 @@
 .event-detail__card {
-	width: 40%;
+	width: 85%;
 	height: 350px;
 	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.7);
 	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 }
+.event-detail__card:first-of-type {
+	margin-top: 170px;
+}
 .event-detail__image {
 	height: 80%;
 	width: 95%;
-	margin: 5px 5px;
+	margin: 10px 5px;
 	border: 1px solid #000;
 }
 .event-detail__detail {
@@ -17,7 +21,7 @@
 	border: 1px solid #f0f0f0;
 	width: 95%;
 	height: 10%;
-	margin: 5px auto;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -38,3 +42,31 @@
 .event-detail__description {
 	
 }
+.event-detail__link {
+	color: #000;
+	text-decoration: none;
+}
+
+@media only screen 
+and (min-width : 560px) and (max-width : 720px) {
+ .event-detail__card {width: 70%;}
+}
+
+@media only screen 
+and (min-width : 721px) and (max-width : 1223px) {
+ .event-detail__card {width: 50%;}
+}
+/*iPad Pro*/
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1024px) {
+	.event-detail__card:first-of-type {
+		margin-top: 150px;
+}
+}
+
+@media only screen 
+and (min-width : 1224px) {
+ .event-detail__card {width: 40%;}
+}
+
