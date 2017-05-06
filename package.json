@@ -3,12 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-config-eventbrite-react": "^4.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^7.0.0",
     "react-scripts": "0.9.5"
   },
   "dependencies": {
+    "axios": "^0.16.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-icons": "^2.2.4"
+    "react-icons": "^2.2.4",
+    "react-redux": "^5.0.4",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "yelp-fusion": "^1.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
