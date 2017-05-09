@@ -8,7 +8,7 @@
 	margin-bottom: 20px;
 }
 .event-detail__container:first-of-type {
-	margin-top: 190px;
+	margin-top: 160px;
 }
 .event-detail__card {
 	width: 85%;
@@ -41,21 +41,48 @@
 	align-items: center;
 	justify-content: center;
 }
+.event-detail__detail.event-detail__cta {
+	background-color: #ff6417;
+}
 .event-detail__detail:nth-child(4) {
 	margin-top: 4px;
 }
+.event-detail__detail:last-of-type {
+	margin-top: 4px;
+}
 .event-detail__detail:hover {
-	background-color: #f0f0f0;
+	background-color: rgba(236, 240, 241,1.0);
 	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 }
+.event-detail__detail.event-detail__cta:hover {
+
+	background-color: #fff;
+}
 .event-detail__detail:active {
 	border: none;
-	background-color: #e8e8e8;
-	-webkit-box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.46);
-	-moz-box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.46);
-	box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.46);
+	background-color: rgba(189, 195, 199,1.0);
+	-webkit-box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.26);
+	-moz-box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.26);
+	box-shadow: 3px 3px 14px 5px rgba(171,171,171,0.26);
+}
+.event-detail__detail.event-detail__cta:active {
+	background-color: #ff864a;
+}
+.event-detail__font-white:active {
+	color: #fff;
+	font-weight: bold;
+}
+.event-detail__no-highlight:hover {
+	background-color: #f8f8f8;
+	box-shadow: none;
+	border: 1px solid #f0f0f0;
+}
+.event-detail__no-highlight:active {
+	background-color: #f8f8f8;
+	box-shadow: none;
+	border: 1px solid #f0f0f0;
 }
 .event-detail__description {
 	
@@ -63,6 +90,16 @@
 .event-detail__link {
 	color: #000;
 	text-decoration: none;
+}
+.event-detail__cta {
+	color: #fff;
+	text-decoration: none;
+}
+.event-detail__cta:hover {
+	color: #ff6417;
+}
+.event-detail__cta:active {
+	color: #fff;
 }
 .event-detail__is-free-box {
 	border-radius: 7px;
@@ -151,5 +188,8 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (min-width : 1224px) {
  .event-detail__card {width: 40%;}
+ .event-detail__container:first-of-type {
+	margin-top: 200px;
+	}
 }
 
