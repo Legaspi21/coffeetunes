@@ -12,6 +12,9 @@ class Header extends Component {
 					<p>{subtitle}</p>
 				</div>
 				<SearchBar />
+				<div className="header__box_logos">
+					<img className="header__img" src="http://www.wixeventviewer.com/images/powered_by_eventbrite.png" alt=""/>
+				</div>
 			</div>
 		);
 	}

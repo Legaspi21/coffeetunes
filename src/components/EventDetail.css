@@ -5,30 +5,18 @@
 	justify-content: center;
 	width: 100%;
 	margin: 0 auto;
-	/*height: 100%;*/
 	margin-bottom: 20px;
-	
 }
 .event-detail__container:first-of-type {
-	margin-top: 170px;
+	margin-top: 190px;
 }
 .event-detail__card {
 	width: 85%;
 	height: 450px;
-	background-color: rgba(255, 255, 255, 0.7);
+	/*background-color: rgba(255, 255, 255, 0.7);*/
 	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
-	/*width: 85%;
-	height: 450px;
-	margin-bottom: 20px;*/
-	/*background-color: rgba(255, 255, 255, 0.7);
-	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
-	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
-	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);*/
-}
-.event-detail__card:first-of-type {
-	/*margin-top: 170px;*/
 }
 .event-detail__card_front {
 	height: 100%;

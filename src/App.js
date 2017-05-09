@@ -23,6 +23,9 @@ class App extends Component {
       <div className="App">
         <Header title="Coffee Tunes" subtitle="Discover Artists - Meet for Coffee" />
         {this.state.eventsLoaded ? <EventList events={events} /> : null}
+        <div className="App__footer">
+          <h5>Built by: Aidan Legaspi</h5>         
+        </div>
       </div>
     );
   }
