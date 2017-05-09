@@ -10,7 +10,7 @@
 	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 11%, rgba(255,255,255,0.95) 86%, rgba(255,255,255,0.94) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 	width: 100%;
-	height: 22%;
+	height: 120px;
 	position: fixed;
 	display: flex;
 	justify-content: center;
@@ -18,6 +18,9 @@
 	flex-direction: column;
 	font-size: 100%;
 	z-index: 99;
+	padding-top: 12px;
+	padding-bottom: 12px;
+
 }
 .header__title {
 	font-family: 'Love Ya Like A Sister', cursive;
@@ -37,7 +40,7 @@
 	align-self: center;
 }
 .header__img {
-	margin-top: 10px;
+	margin-top: 15px;
 
 	width: 20%;
 	height: 20%;
@@ -47,6 +50,6 @@
 and (min-width : 1224px) {
  .header__container {
  	font-size: 150%;
- 	padding-bottom: 10px;
+ 	height: 160px;
  }
 }
