@@ -5,7 +5,10 @@ import './EventList.css';
 class EventList extends Component {
 	renderEvents() {
 		let {events} = this.props;
-		return events.map((event) => {
+		let sortedEvents = events.sort((a, b) => {
+		  return new Date(a.start.local) < new Date(b.start.local);
+		})
+		return sortedEvents.map((event) => {
 			// TODO replace hardcoded ID with logic to exclude events without sufficient venue information
 			if(event.logo && event.id !== '26545388973') {
 				console.log(event)
@@ -17,7 +20,8 @@ class EventList extends Component {
 					url={event.url}
 					is_free={event.is_free}
 					latitude={event.latitude}
-					longitude={event.longitude} 
+					longitude={event.longitude}
+					date={event.start.local} 
 					/>
 				);
 			}
