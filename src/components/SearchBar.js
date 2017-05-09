@@ -13,6 +13,7 @@ class SearchBar extends Component {
   handleSubmit(e) {
     const {fetchEvents,city} = this.props;
     e.preventDefault();
+    console.log(city)
     fetchEvents(city);
   }
   render() {
