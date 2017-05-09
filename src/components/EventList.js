@@ -6,7 +6,8 @@ class EventList extends Component {
 	renderEvents() {
 		let {events} = this.props;
 		return events.map((event) => {
-			if(event.logo) {
+			// TODO replace hardcoded ID with logic to exclude events without sufficient venue information
+			if(event.logo && event.id !== '26545388973') {
 				console.log(event)
 				return(
 					<EventDetail 

@@ -8,8 +8,8 @@ class EventDetail extends Component {
 		flipped: false
 	}
 	handleClick() {
-		console.log(this.props.latitude)
-		// this.setState({flipped:!this.state.flipped})
+		// TODO: Move to Redux
+		console.log(this)
 		const coffee = require('nearest-coffee')
   	coffee({ 
       location: [this.props.latitude, this.props.longitude], 
@@ -24,8 +24,6 @@ class EventDetail extends Component {
    		this.setState({placeLoaded:true});
    		this.setState({flipped:!this.state.flipped})
   })
-  	console.log(this)
-  	// document.querySelector(".event-detail__container").classList.toggle("flip-container-flip")
 	}
 	render() {
 		let {image,name,url,is_free,latitude,longitude} = this.props;
@@ -50,7 +48,9 @@ class EventDetail extends Component {
 						<div className={`event-detail__is-free-${is_free ? 'box' : 'inactive'}`}><h3 className="event-detail__is-free">{is_free ? 'FREE' : null}</h3></div>
 						<img className="event-detail__image" src={placeLoaded ? this.state.place.photos[0].getUrl({'maxWidth': 1000, 'maxHeight': 1000}) : null} alt=""/>
 						<div className="event-detail__detail">
+					{/*TODO: Link to a map */}
 							<p className="event-detail__description">{placeLoaded ? `${this.state.place.name} @ ${this.state.place.vicinity}` : null}</p>	
+						}
 						</div>
 						<div className="event-detail__coffee event-detail__detail" onClick={this.handleClick.bind(this)}>
 							<p className="event-detail__description">Back</p>
