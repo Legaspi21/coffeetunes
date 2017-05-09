@@ -1,4 +1,4 @@
-# Coffee Tunes
+# Coffee Tunes :coffee: :musical_note:
 ## Discover Artists - Meet For Coffee
 Discover the hottest music events in your city and rendevous with other people who share a common interest!
 ## Check it out!
