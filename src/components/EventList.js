@@ -7,18 +7,23 @@ class EventList extends Component {
 		let {events} = this.props;
 		return events.map((event) => {
 			if(event.logo) {
+				console.log(event)
 				return(
 					<EventDetail 
 					key={event.id} 
 					name={event.name.text} 
 					image={event.logo.url}
-					url={event.url} 
+					url={event.url}
+					is_free={event.is_free}
+					latitude={event.latitude}
+					longitude={event.longitude} 
 					/>
 				);
 			}
 		return;
 		});
 	}
+
 	render() {
 		return(
 			<div className="event-list__container">
