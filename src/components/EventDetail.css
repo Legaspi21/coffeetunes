@@ -1,20 +1,48 @@
+.event-detail__container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto;
+	/*height: 100%;*/
+	margin-bottom: 20px;
+	
+}
+.event-detail__container:first-of-type {
+	margin-top: 170px;
+}
 .event-detail__card {
 	width: 85%;
-	height: 350px;
-	margin-bottom: 20px;
+	height: 450px;
 	background-color: rgba(255, 255, 255, 0.7);
 	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
 	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	/*width: 85%;
+	height: 450px;
+	margin-bottom: 20px;*/
+	/*background-color: rgba(255, 255, 255, 0.7);
+	-webkit-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	-moz-box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);
+	box-shadow: 3px 4px 14px 0px rgba(171,171,171,0.46);*/
 }
 .event-detail__card:first-of-type {
-	margin-top: 170px;
+	/*margin-top: 170px;*/
+}
+.event-detail__card_front {
+	height: 100%;
+	width: 100%;
+}
+.event-detail__card_back {
+	height: 100%;
+	width: 100%;
 }
 .event-detail__image {
-	height: 80%;
+	height: 70%;
 	width: 95%;
 	margin: 10px 5px;
-	border: 1px solid #000;
+	/*border: 1px solid #000;*/
 }
 .event-detail__detail {
 	background-color: #f8f8f8;
@@ -22,9 +50,13 @@
 	width: 95%;
 	height: 10%;
 	margin: 0 auto;
+	
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.event-detail__detail:nth-child(4) {
+	margin-top: 4px;
 }
 .event-detail__detail:hover {
 	background-color: #f0f0f0;
@@ -46,7 +78,72 @@
 	color: #000;
 	text-decoration: none;
 }
+.event-detail__is-free-box {
+	border-radius: 7px;
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+	background-color: #f0f0f0;
+}
+.event-detail__is-free {
+	padding: 5px 5px;
+	font-size: 150%;
+}
+.event-detail__is-free-inactive {
+	display: none;
+}
 
+/* ~~~~~~~~~~~~~~~~*/
+/* Flip Animation */
+/* ~~~~~~~~~~~~~~~~*/
+
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	/*.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}*/
+.flip-container-flip .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .event-detail__card_front, .event-detail__card_back  {
+	/*width: 320px;
+	height: 480px;*/
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.9s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.event-detail__card_front, .event-detail__card_back  {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.event-detail__card_front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.event-detail__card_back  {
+	transform: rotateY(180deg);
+}
+.event-detail__card_back  {
+	opacity: none;
+}
 @media only screen 
 and (min-width : 560px) and (max-width : 720px) {
  .event-detail__card {width: 70%;}
