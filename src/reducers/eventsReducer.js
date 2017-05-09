@@ -1,12 +1,11 @@
 const INITIAL_STATE = {
-  events: [],
+  events: '',
   city: 'San Francisco'
 };
 const eventsReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'UPDATE_EVENTS':
     console.log(action.payload)
-    debugger
       return {
         ...state,
         events:action.payload

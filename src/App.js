@@ -6,15 +6,23 @@ import {updateSearch,fetchEvents} from './actions';
 import './App.css';
 
 class App extends Component {
+  state = {
+    eventsLoaded: false
+  }
   componentWillMount() {
     this.props.fetchEvents(this.props.data.city);
   }
+  componentWillReceiveProps(nextProps) {
+    this.setState({eventsLoaded:true})
+  }
+  
   render() {
     let {events} = this.props.data;
+    console.log(events)
     return (
       <div className="App">
         <Header title="Coffee Tunes" subtitle="Discover Artists - Meet for Coffee" />
-        {events.length > 1 ? <EventList events={events} /> : null}
+        {this.state.eventsLoaded ? <EventList events={events} /> : null}
       </div>
     );
   }

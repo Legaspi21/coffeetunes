@@ -1,3 +1,4 @@
+
 import axios from 'axios';
 // import yelp from 'yelp-fusion';
 import {
@@ -49,15 +50,14 @@ export const fetchEvents = (city) => {
         event.longitude = response.data.longitude;
         eventArray.push(event)
       })
+      .then(() => {
+        setTimeout(() => updateEvents(dispatch, eventArray),0)
+      })
       .catch(function (error) {
         console.log("error")
         console.log(error);
       });
     })   
-    
-  })
-  .then(() => {
-    updateEvents(dispatch, eventArray)
   })
   .catch(function (error) {
     console.log(error);

@@ -8,6 +8,7 @@ class EventDetail extends Component {
 		flipped: false
 	}
 	handleClick() {
+		console.log(this.props.latitude)
 		// this.setState({flipped:!this.state.flipped})
 		const coffee = require('nearest-coffee')
   	coffee({ 
@@ -28,7 +29,6 @@ class EventDetail extends Component {
 	}
 	render() {
 		let {image,name,url,is_free,latitude,longitude} = this.props;
-		console.log(name)
 		let {placeLoaded} = this.state;
 		if (placeLoaded) {
 			let {photos,vicinity} = this.state.place;
