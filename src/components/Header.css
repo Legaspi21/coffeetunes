@@ -20,7 +20,6 @@
 	z-index: 99;
 	padding-top: 12px;
 	padding-bottom: 12px;
-
 }
 .header__title {
 	font-family: 'Love Ya Like A Sister', cursive;
@@ -41,10 +40,8 @@
 }
 .header__img {
 	margin-top: 15px;
-
 	width: 20%;
 	height: 20%;
-
 }
 @media only screen 
 and (min-width : 1224px) {

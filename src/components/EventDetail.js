@@ -29,7 +29,6 @@ class EventDetail extends Component {
 		let displayDate = new Date(date).toLocaleDateString('en-US',{ year: 'numeric', month: 'long', day: 'numeric' });
 		let {placeLoaded} = this.state;
 		if (placeLoaded) {
-			console.log(this.state.place)
 			let {photos,vicinity} = this.state.place;
 		}
 		return(
