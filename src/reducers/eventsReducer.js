@@ -5,7 +5,6 @@ const INITIAL_STATE = {
 const eventsReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'UPDATE_EVENTS':
-    console.log(action.payload)
       return {
         ...state,
         events:action.payload

@@ -4,11 +4,10 @@ import './EventDetail.css';
 class EventDetail extends Component {
 	state = {
 		place: {},
-		placeLoaded: false,
-		flipped: false
+  	placeLoaded: false,
+  	flipped: false
 	}
 	handleClick() {
-		// TODO: Move to Redux
 		const coffee = require('nearest-coffee')
   	coffee({ 
       location: [this.props.latitude, this.props.longitude], 
@@ -22,7 +21,7 @@ class EventDetail extends Component {
    		this.setState({place:place});
    		this.setState({placeLoaded:true});
    		this.setState({flipped:!this.state.flipped})
-  })
+  	})
 	}
 	render() {
 		let {image,name,url,is_free,latitude,longitude,date} = this.props;

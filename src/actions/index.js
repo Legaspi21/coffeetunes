@@ -1,5 +1,5 @@
-
 import axios from 'axios';
+import coffee from 'nearest-coffee';
 // import yelp from 'yelp-fusion';
 import {
   TOKEN, 
@@ -16,6 +16,13 @@ const updateEvents = (dispatch, events) => {
     payload: events
   });
 };
+
+const updateCoffeeShop = (dispatch, place) => {
+  dispatch({
+    type: 'NEAREST_COFFEE_SHOP',
+    payload: place
+  });
+}
 
 export const updateSearch = (text) => {
   console.log(text)
@@ -65,6 +72,23 @@ export const fetchEvents = (city) => {
   };
 };
 
+// export const fetchNearestCoffeeShop = (dispatch) => {
+//   const {latitude,longitude} = dispatch;
+//   return (dispatch) => {
+//     const coffee = require('nearest-coffee')
+//     coffee({ 
+//       location: [latitude, longitude], 
+//       radius: 100,
+//       limit: 1,
+//       rankBy: 'distance'
+//     }, (err, data) => {
+//       if (err) 
+//         throw err
+//       let place = data[0];
+//       updateCoffeeShop(dispatch, place);
+//     })
+//   }
+// }
 // TODO: Resolve CORS problem and use YELP API. Create proxy node server
 
 // const getNearestCoffeeShop = (latitude,longitude) => {

@@ -18,7 +18,6 @@ class App extends Component {
   
   render() {
     let {events} = this.props.data;
-    console.log(events)
     return (
       <div className="App">
         <Header title="Coffee Tunes" subtitle="Discover Artists - Meet for Coffee" />
