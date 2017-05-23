@@ -1,5 +1,5 @@
 import axios from 'axios';
-import coffee from 'nearest-coffee';
+// import coffee from 'nearest-coffee';
 // import yelp from 'yelp-fusion';
 import {
   TOKEN, 

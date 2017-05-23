@@ -8,10 +8,13 @@
     "eslint-config-eventbrite-react": "^4.0.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-react": "^7.0.0",
+    "react-addons-test-utils": "^15.5.1",
     "react-scripts": "0.9.5"
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "enzyme": "^2.8.2",
+    "jest-enzyme": "2.1.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-google-maps": "^6.3.0",

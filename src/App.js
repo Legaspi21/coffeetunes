@@ -5,12 +5,12 @@ import EventList from './components/EventList';
 import {updateSearch,fetchEvents} from './actions';
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   state = {
     eventsLoaded: false
   }
   componentWillMount() {
-    this.props.fetchEvents(this.props.data.city);
+      this.props.fetchEvents(this.props.data.city);
   }
   componentWillReceiveProps(nextProps) {
     this.setState({eventsLoaded:true})
